@@ -35,7 +35,8 @@ for i in range(height):
 		cpix=pixel[i*width+j]
 		#magic numbers found online
 		brightness[i][j]=(0.299*cpix[0]**2+0.587*cpix[1]**2+0.114*cpix[2]**2)**0.5
-with codecs.open("blockImage.txt", "w", "utf-16") as ti:
+#save with the same name as fiven file but different extension
+with codecs.open(((sys.argv[1].split(".")[0])+".txt"), "w", "utf-16") as ti:
 	for i in range(0, height-2, 2):
 		for j in range(0, width-2, 2):
 			if mean((brightness[i][j], brightness[i+1][j], brightness[i][j+1], brightness[i+1][j+1], brightness[i+2][j]))<128:
