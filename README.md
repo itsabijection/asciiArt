@@ -8,6 +8,4 @@ Todos:
 
 -Add better method to lower quality of image (should probably default to 200x200)
 
--Add support for file types other than .jpg
-
 -Add flag to optionally generate html file instead of text
