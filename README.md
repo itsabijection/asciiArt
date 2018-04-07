@@ -4,8 +4,10 @@ Todos:
 
 -Change font in mapping to more accurately reflect font used in output image
 
+-Use char->pixel mapping to encode chunks of image
+
 -Add options for final dimensions
 
--Add better method to lower quality of image (should probably default to 200x200)
+-Add better method to lower quality of image (should probably default to 80x80)
 
 -Add flag to optionally generate html file instead of text
