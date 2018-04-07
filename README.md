@@ -2,7 +2,7 @@ A python command line interface to create ascii art from a given file.
 
 Todos:
 
--Map ascii chars to brightnesses so that we can get a more grayscale img (instead of black/white)
+-Change font in mapping to more accurately reflect font used in output image
 
 -Add options for final dimensions
 
