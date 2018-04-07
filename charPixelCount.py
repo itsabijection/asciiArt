@@ -1,6 +1,6 @@
 from PIL import Image, ImageFont, ImageDraw
 from string import ascii_lowercase
-with open("map.txt", "w") as f:
+with open("map.csv", "w") as f:
 	for i in range(33, 126):
 		count=0
 		img=Image.new('RGB', (200,200))
