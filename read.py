@@ -11,6 +11,8 @@ def mean(vals):
 	return(m/len(vals))
 #finds the index of the element in sorted arr closest in value to val
 def closest(val, arr):
+	if val>1:
+		return len(arr)-1
 	for i in range(len(arr)):
 		if(val>=arr[i] and val<=arr[i+1]):
 			if abs(arr[i]-val)<abs(arr[i+1]-val):
@@ -39,5 +41,5 @@ with codecs.open(((sys.argv[1].split(".")[0])+".txt"), "w", "utf-16") as ti:
 		for j in range(0, width-2, 2):
 			#needs to be switched for white on black
 			b=(255-mean((brightness[i][j], brightness[i+1][j], brightness[i][j+1], brightness[i+1][j+1], brightness[i+2][j])))/255
-			ti.write(chr(ufBrightness.index(fBrightness[closest(b,fBrightness)])+33))
+			ti.write(chr(ufBrightness.index(fBrightness[closest(b*1.4,fBrightness)])+33))
 		ti.write("\n")
